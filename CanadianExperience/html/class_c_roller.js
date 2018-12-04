@@ -1,0 +1,25 @@
+var class_c_roller =
+[
+    [ "CRoller", "class_c_roller.html#ad5c446968f3f5eb6bbfc9002580f87eb", null ],
+    [ "~CRoller", "class_c_roller.html#a6f4e691e194d2614dd90876f2d09fb42", null ],
+    [ "CRoller", "class_c_roller.html#a253513c23bdc88a1e9924890820555f7", null ],
+    [ "CRoller", "class_c_roller.html#a80b0e8a795f26b1c9af36ef9d70ea910", null ],
+    [ "AddPart", "class_c_roller.html#a8a4afb8853422d92cc061d665adc9b6e", null ],
+    [ "Draw", "class_c_roller.html#aad2af245ea55e61898d53d513933ccf2", null ],
+    [ "GetSource", "class_c_roller.html#a58f73cb2c7f44014b82d402350b297a7", null ],
+    [ "operator=", "class_c_roller.html#a12630f3eb35be9a8c19424ca669598ee", null ],
+    [ "SetCam", "class_c_roller.html#ab47e6ba48cb2831ef0b4bc092d812255", null ],
+    [ "SetChannel", "class_c_roller.html#abafc6e1dc8a728b9332b6d0d2e0dd46d", null ],
+    [ "mAngle", "class_c_roller.html#abc07da7e8c3f1868e91e4cc7ab9d6747", null ],
+    [ "mBell", "class_c_roller.html#a864b73520b60b6bd9d81c46fe385fc02", null ],
+    [ "mCam", "class_c_roller.html#a02b5754cf5c036fa4985e0311d15358e", null ],
+    [ "mChannel", "class_c_roller.html#a3d6fffdd57b113eb29ec521d7a97ced1", null ],
+    [ "mDistance", "class_c_roller.html#a62b33b2c174ff699d766abb20491fa8f", null ],
+    [ "mLocation", "class_c_roller.html#a920dc9e7fa89cf1329765e6063e152e5", null ],
+    [ "mPlayerFlag", "class_c_roller.html#a3512d361f9b5e56fdc47fde6cf05406a", null ],
+    [ "mPrevDist", "class_c_roller.html#afa56bc2b94cbd4124d4b74edfbff8736", null ],
+    [ "mRadius", "class_c_roller.html#a7602aca17da372878c2ff45eab626a3f", null ],
+    [ "mShape", "class_c_roller.html#aa32eb924f508a4403b64aa89cff2e4bb", null ],
+    [ "mSource", "class_c_roller.html#abf4fefa984d5c355c017cc27bfbd4da2", null ],
+    [ "mYHolder", "class_c_roller.html#ad4606b4bc83d2bc49fa87158d0cf47b7", null ]
+];

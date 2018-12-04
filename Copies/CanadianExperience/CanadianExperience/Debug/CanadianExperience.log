@@ -1,0 +1,10 @@
+﻿  ActorFactory.cpp
+  HaroldFactory.cpp
+  HeadTop.cpp
+c:\users\markm\source\repos\canadianexperience\canadianexperience\headtop.cpp(70): warning C4244: 'argument': conversion from 'int' to 'Gdiplus::REAL', possible loss of data
+c:\users\markm\source\repos\canadianexperience\canadianexperience\headtop.cpp(76): warning C4244: 'argument': conversion from 'int' to 'Gdiplus::REAL', possible loss of data
+  ImageDrawable.cpp
+  PictureFactory.cpp
+  SpartyFactory.cpp
+  Generating Code...
+  CanadianExperience.vcxproj -> C:\Users\markm\source\repos\CanadianExperience\Debug\CanadianExperience.exe

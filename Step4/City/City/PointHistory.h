@@ -1,0 +1,97 @@
+/**
+* \file PointHistory.cpp
+*
+* \author Charles Owen
+*
+* Class that maintains a collection of Point objects in order.
+*/
+
+#pragma once
+#include <memory>
+
+
+/**
+ * Class that maintains a collection of Point objects in order.
+ */
+class CPointHistory
+{
+public:
+	CPointHistory();
+	virtual ~CPointHistory();
+
+	void Add(Gdiplus::Point p);
+
+protected:
+	/**
+	* Nested class that stores up to five points in a bin.
+	*/
+	class MiniTreeNode
+	{
+	public:
+		/// Maximum number of points we can put into a bin
+		const static int MaxPoints = 5;
+
+		/**
+		 * Constructor
+		 * \param point The point for node
+		 */
+		MiniTreeNode(Gdiplus::Point point) : mPoint(point) {}
+
+		/// Destructor
+		virtual ~MiniTreeNode() {}
+
+		bool Add(Gdiplus::Point point, std::shared_ptr<MiniTreeNode> me);
+
+		/// Set the stored point
+		/// \param point Point to save
+		void Set(Gdiplus::Point point) { mPoint = point; }
+
+		/// Get a stored point
+		/// \return Stored point value
+		Gdiplus::Point Get() { return mPoint; }
+
+		/// Get the next bin in the list
+		/// \return Pointer to next bin or null if none
+		std::shared_ptr<MiniTreeNode> GetNext() { return mNext; }
+
+		/// Get the left subtree
+		/// \return Pointer to left subtree or null if none
+		std::shared_ptr<MiniTreeNode> GetLeft() { return mLeft; }
+
+		/// Get the right subtree
+		/// \return Pointer to right subtree or null if none
+		std::shared_ptr<MiniTreeNode> GetRight() { return mRight; }
+
+		/// Get the parent node
+		/// \return Pointer to parent node or null if none
+		std::shared_ptr<MiniTreeNode> GetParent() { return mParent.lock(); }
+
+		/// Set the next bin in the list
+		/// \param next Next pointer to set
+		void SetNext(std::shared_ptr<MiniTreeNode> next) { mNext = next; }
+
+	private:
+		/// The point stored in this tree node.
+		Gdiplus::Point mPoint;
+
+		/// Parent of this MiniTree or null if root tree
+		std::weak_ptr<MiniTreeNode> mParent;
+
+		/// Left sub-tree
+		std::shared_ptr<MiniTreeNode> mLeft;
+
+		/// Right sub-tree
+		std::shared_ptr<MiniTreeNode> mRight;
+
+		/// Next MiniTree object
+		std::shared_ptr<MiniTreeNode> mNext;
+	};
+	
+	/// Pointer to the head of the linked list of MiniTrees
+	std::shared_ptr<MiniTreeNode> mHead;
+
+private:
+	/// Pointer to the tail of the linked list of MiniTrees (last node)
+	std::shared_ptr<MiniTreeNode> mTail;
+};
+

@@ -1,0 +1,233 @@
+\hypertarget{class_c_item}{}\section{C\+Item Class Reference}
+\label{class_c_item}\index{C\+Item@{C\+Item}}
+
+
+{\ttfamily \#include $<$Item.\+h$>$}
+
+Inheritance diagram for C\+Item\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_item}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_item_ac2ea847c008cf8d1de92c870c8f8262f}\label{class_c_item_ac2ea847c008cf8d1de92c870c8f8262f}} 
+\mbox{\hyperlink{class_c_item_ac2ea847c008cf8d1de92c870c8f8262f}{C\+Item}} ()=delete
+\begin{DoxyCompactList}\small\item\em Default constructor (disabled) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_item_a7d6042bbb9a571d2dc1d1f89016a97c8}\label{class_c_item_a7d6042bbb9a571d2dc1d1f89016a97c8}} 
+\mbox{\hyperlink{class_c_item_a7d6042bbb9a571d2dc1d1f89016a97c8}{C\+Item}} (const \mbox{\hyperlink{class_c_item}{C\+Item}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor (disabled) \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_c_item_a2487c6e822ed0e850544f1745b43f584}{$\sim$\+C\+Item}} ()
+\item 
+\mbox{\hyperlink{class_c_aquarium}{C\+Aquarium}} $\ast$ \mbox{\hyperlink{class_c_item_a831327c8bf6c2671cddb0ae4c9339e47}{Get\+Aquarium}} ()
+\item 
+double \mbox{\hyperlink{class_c_item_a394d38a058fc53f0e958ca52248560c8}{GetX}} () const
+\item 
+double \mbox{\hyperlink{class_c_item_ac0fe6be80f8ef19854d7f41b4803f658}{GetY}} () const
+\item 
+void \mbox{\hyperlink{class_c_item_a9c194f3f08e515853600cecca3e6d319}{Set\+Location}} (double x, double y)
+\item 
+virtual void \mbox{\hyperlink{class_c_item_acfad712746a2da68669c38f5704b3243}{Draw}} (Gdiplus\+::\+Graphics $\ast$graphics)
+\item 
+virtual bool \mbox{\hyperlink{class_c_item_ab3ffe07990fd2dec1e5cb65ad8ede7a4}{Hit\+Test}} (int x, int y)
+\item 
+virtual void \mbox{\hyperlink{class_c_item_a0e88df0b5e12a93941dcec378797d0fe}{Update}} (double elapsed)
+\item 
+int \mbox{\hyperlink{class_c_item_a69392bf15fe717049344f519c8a235d0}{Get\+Height}} () const
+\item 
+int \mbox{\hyperlink{class_c_item_a0109712c4628b8d5713291de07a0bc1b}{Get\+Width}} () const
+\item 
+void \mbox{\hyperlink{class_c_item_a8718f7e56783f5c974fd70b934e4fb79}{Set\+Mirror}} (bool m)
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classxmlnode_1_1_c_xml_node}{xmlnode\+::\+C\+Xml\+Node}} $>$ \mbox{\hyperlink{class_c_item_a10584fa8e05d3abe125f95f0ceecdedd}{Xml\+Save}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classxmlnode_1_1_c_xml_node}{xmlnode\+::\+C\+Xml\+Node}} $>$ \&node)
+\begin{DoxyCompactList}\small\item\em made virtual similar to other examples in the step assignment \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_item_ad0bad7d47a01ff133734b5498f9ca3bb}{Xml\+Load}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classxmlnode_1_1_c_xml_node}{xmlnode\+::\+C\+Xml\+Node}} $>$ \&node)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_item_a376d86b9ee99285ec157f1fb3a5e1e35}{C\+Item}} (\mbox{\hyperlink{class_c_aquarium}{C\+Aquarium}} $\ast$aquarium, const std\+::wstring \&filename)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for any item in our aquarium. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_item_a2487c6e822ed0e850544f1745b43f584}\label{class_c_item_a2487c6e822ed0e850544f1745b43f584}} 
+\index{C\+Item@{C\+Item}!````~C\+Item@{$\sim$\+C\+Item}}
+\index{````~C\+Item@{$\sim$\+C\+Item}!C\+Item@{C\+Item}}
+\subsubsection{\texorpdfstring{$\sim$\+C\+Item()}{~CItem()}}
+{\footnotesize\ttfamily C\+Item\+::$\sim$\+C\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructor \mbox{\Hypertarget{class_c_item_a376d86b9ee99285ec157f1fb3a5e1e35}\label{class_c_item_a376d86b9ee99285ec157f1fb3a5e1e35}} 
+\index{C\+Item@{C\+Item}!C\+Item@{C\+Item}}
+\index{C\+Item@{C\+Item}!C\+Item@{C\+Item}}
+\subsubsection{\texorpdfstring{C\+Item()}{CItem()}}
+{\footnotesize\ttfamily C\+Item\+::\+C\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_aquarium}{C\+Aquarium}} $\ast$}]{aquarium,  }\item[{const std\+::wstring \&}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em aquarium} & The aquarium this item is a member of \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_item_acfad712746a2da68669c38f5704b3243}\label{class_c_item_acfad712746a2da68669c38f5704b3243}} 
+\index{C\+Item@{C\+Item}!Draw@{Draw}}
+\index{Draw@{Draw}!C\+Item@{C\+Item}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void C\+Item\+::\+Draw (\begin{DoxyParamCaption}\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Draw our item 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & The graphics context to draw on \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_item_a831327c8bf6c2671cddb0ae4c9339e47}\label{class_c_item_a831327c8bf6c2671cddb0ae4c9339e47}} 
+\index{C\+Item@{C\+Item}!Get\+Aquarium@{Get\+Aquarium}}
+\index{Get\+Aquarium@{Get\+Aquarium}!C\+Item@{C\+Item}}
+\subsubsection{\texorpdfstring{Get\+Aquarium()}{GetAquarium()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_aquarium}{C\+Aquarium}}$\ast$ C\+Item\+::\+Get\+Aquarium (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the pointer to the \mbox{\hyperlink{class_c_aquarium}{C\+Aquarium}} object \begin{DoxyReturn}{Returns}
+Pointer to \mbox{\hyperlink{class_c_aquarium}{C\+Aquarium}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_item_a69392bf15fe717049344f519c8a235d0}\label{class_c_item_a69392bf15fe717049344f519c8a235d0}} 
+\index{C\+Item@{C\+Item}!Get\+Height@{Get\+Height}}
+\index{Get\+Height@{Get\+Height}!C\+Item@{C\+Item}}
+\subsubsection{\texorpdfstring{Get\+Height()}{GetHeight()}}
+{\footnotesize\ttfamily int C\+Item\+::\+Get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the height of the image \begin{DoxyReturn}{Returns}
+height in pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_item_a0109712c4628b8d5713291de07a0bc1b}\label{class_c_item_a0109712c4628b8d5713291de07a0bc1b}} 
+\index{C\+Item@{C\+Item}!Get\+Width@{Get\+Width}}
+\index{Get\+Width@{Get\+Width}!C\+Item@{C\+Item}}
+\subsubsection{\texorpdfstring{Get\+Width()}{GetWidth()}}
+{\footnotesize\ttfamily int C\+Item\+::\+Get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the width of the image \begin{DoxyReturn}{Returns}
+width in pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_item_a394d38a058fc53f0e958ca52248560c8}\label{class_c_item_a394d38a058fc53f0e958ca52248560c8}} 
+\index{C\+Item@{C\+Item}!GetX@{GetX}}
+\index{GetX@{GetX}!C\+Item@{C\+Item}}
+\subsubsection{\texorpdfstring{Get\+X()}{GetX()}}
+{\footnotesize\ttfamily double C\+Item\+::\+GetX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+The X location of the item \begin{DoxyReturn}{Returns}
+X location in pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_item_ac0fe6be80f8ef19854d7f41b4803f658}\label{class_c_item_ac0fe6be80f8ef19854d7f41b4803f658}} 
+\index{C\+Item@{C\+Item}!GetY@{GetY}}
+\index{GetY@{GetY}!C\+Item@{C\+Item}}
+\subsubsection{\texorpdfstring{Get\+Y()}{GetY()}}
+{\footnotesize\ttfamily double C\+Item\+::\+GetY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+The Y location of the item \begin{DoxyReturn}{Returns}
+Y location in pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_item_ab3ffe07990fd2dec1e5cb65ad8ede7a4}\label{class_c_item_ab3ffe07990fd2dec1e5cb65ad8ede7a4}} 
+\index{C\+Item@{C\+Item}!Hit\+Test@{Hit\+Test}}
+\index{Hit\+Test@{Hit\+Test}!C\+Item@{C\+Item}}
+\subsubsection{\texorpdfstring{Hit\+Test()}{HitTest()}}
+{\footnotesize\ttfamily bool C\+Item\+::\+Hit\+Test (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Test to see if we hit this object with a mouse. 
+\begin{DoxyParams}{Parameters}
+{\em x} & X position to test \\
+\hline
+{\em y} & Y position to test \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if hit. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_item_a9c194f3f08e515853600cecca3e6d319}\label{class_c_item_a9c194f3f08e515853600cecca3e6d319}} 
+\index{C\+Item@{C\+Item}!Set\+Location@{Set\+Location}}
+\index{Set\+Location@{Set\+Location}!C\+Item@{C\+Item}}
+\subsubsection{\texorpdfstring{Set\+Location()}{SetLocation()}}
+{\footnotesize\ttfamily void C\+Item\+::\+Set\+Location (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the item location 
+\begin{DoxyParams}{Parameters}
+{\em x} & X location \\
+\hline
+{\em y} & Y location \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_item_a8718f7e56783f5c974fd70b934e4fb79}\label{class_c_item_a8718f7e56783f5c974fd70b934e4fb79}} 
+\index{C\+Item@{C\+Item}!Set\+Mirror@{Set\+Mirror}}
+\index{Set\+Mirror@{Set\+Mirror}!C\+Item@{C\+Item}}
+\subsubsection{\texorpdfstring{Set\+Mirror()}{SetMirror()}}
+{\footnotesize\ttfamily void C\+Item\+::\+Set\+Mirror (\begin{DoxyParamCaption}\item[{bool}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the mirror status 
+\begin{DoxyParams}{Parameters}
+{\em m} & New mirror flag \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_item_a0e88df0b5e12a93941dcec378797d0fe}\label{class_c_item_a0e88df0b5e12a93941dcec378797d0fe}} 
+\index{C\+Item@{C\+Item}!Update@{Update}}
+\index{Update@{Update}!C\+Item@{C\+Item}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void C\+Item\+::\+Update (\begin{DoxyParamCaption}\item[{double}]{elapsed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Handle updates for animation 
+\begin{DoxyParams}{Parameters}
+{\em elapsed} & The time since the last update \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_c_fish_a1f32288b28d3c1f186bd51cf8ac71aeb}{C\+Fish}}.
+
+\mbox{\Hypertarget{class_c_item_ad0bad7d47a01ff133734b5498f9ca3bb}\label{class_c_item_ad0bad7d47a01ff133734b5498f9ca3bb}} 
+\index{C\+Item@{C\+Item}!Xml\+Load@{Xml\+Load}}
+\index{Xml\+Load@{Xml\+Load}!C\+Item@{C\+Item}}
+\subsubsection{\texorpdfstring{Xml\+Load()}{XmlLoad()}}
+{\footnotesize\ttfamily void C\+Item\+::\+Xml\+Load (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classxmlnode_1_1_c_xml_node}{xmlnode\+::\+C\+Xml\+Node}} $>$ \&}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Load the attributes for an item node.
+
+This is the base class version that loads the attributes common to all items. Override this to load custom attributes for specific items.
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The Xml node we are loading the item from \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_c_fish_a997f243d89dd8c397597010eec4b611e}{C\+Fish}}.
+
+\mbox{\Hypertarget{class_c_item_a10584fa8e05d3abe125f95f0ceecdedd}\label{class_c_item_a10584fa8e05d3abe125f95f0ceecdedd}} 
+\index{C\+Item@{C\+Item}!Xml\+Save@{Xml\+Save}}
+\index{Xml\+Save@{Xml\+Save}!C\+Item@{C\+Item}}
+\subsubsection{\texorpdfstring{Xml\+Save()}{XmlSave()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classxmlnode_1_1_c_xml_node}{xmlnode\+::\+C\+Xml\+Node}} $>$ C\+Item\+::\+Xml\+Save (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classxmlnode_1_1_c_xml_node}{xmlnode\+::\+C\+Xml\+Node}} $>$ \&}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+made virtual similar to other examples in the step assignment 
+
+Save this item to an X\+ML node 
+\begin{DoxyParams}{Parameters}
+{\em node} & The node we are going to be a child of \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_c_fish_beta_a0be2886a531ede77bfa5338fec71d71b}{C\+Fish\+Beta}}, \mbox{\hyperlink{class_c_fish_nemo_ae9fd9446cd4852c9d9a78831bec0f32f}{C\+Fish\+Nemo}}, \mbox{\hyperlink{class_c_fish_dory_ac906b7f952cdbc52a72d1e87c9228ad9}{C\+Fish\+Dory}}, \mbox{\hyperlink{class_c_fish_karp_a182d8cce606be73a981bd140aca64ba8}{C\+Fish\+Karp}}, \mbox{\hyperlink{class_c_decor_castle_a83ecb7c898679e55dcafbc6492bc38d0}{C\+Decor\+Castle}}, and \mbox{\hyperlink{class_c_fish_abfc997d2d755be8f94069c57e75a854b}{C\+Fish}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_item_8h}{Item.\+h}}\item 
+\mbox{\hyperlink{_item_8cpp}{Item.\+cpp}}\end{DoxyCompactItemize}

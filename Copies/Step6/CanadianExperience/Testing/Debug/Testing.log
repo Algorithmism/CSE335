@@ -1,0 +1,12 @@
+﻿  CActorTest.cpp
+c:\users\markm\source\repos\canadianexperience\testing\cactortest.cpp(36): warning C4010: single-line comment contains line-continuation character
+  CAnimChannelAngleTest.cpp
+  CDrawableTest.cpp
+  CImageDrawableTest.cpp
+  CPictureObserverTest.cpp
+c:\users\markm\source\repos\canadianexperience\testing\cpictureobservertest.cpp(129): warning C4010: single-line comment contains line-continuation character
+  CPictureTest.cpp
+  CPolyDrawableTest.cpp
+  CTimelineTest.cpp
+  Generating Code...
+  Testing.vcxproj -> C:\Users\markm\source\repos\CanadianExperience\Debug\Testing.dll

@@ -1,0 +1,131 @@
+\hypertarget{class_c_fish}{}\section{C\+Fish Class Reference}
+\label{class_c_fish}\index{C\+Fish@{C\+Fish}}
+
+
+{\ttfamily \#include $<$Fish.\+h$>$}
+
+Inheritance diagram for C\+Fish\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_fish}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_fish_ac4c190f887382bb976a3bca156010d60}\label{class_c_fish_ac4c190f887382bb976a3bca156010d60}} 
+\mbox{\hyperlink{class_c_fish_ac4c190f887382bb976a3bca156010d60}{C\+Fish}} ()=delete
+\begin{DoxyCompactList}\small\item\em Default constructor (disabled) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_fish_a74ba012f126e8e105638cba899c5434b}\label{class_c_fish_a74ba012f126e8e105638cba899c5434b}} 
+\mbox{\hyperlink{class_c_fish_a74ba012f126e8e105638cba899c5434b}{C\+Fish}} (const \mbox{\hyperlink{class_c_fish}{C\+Fish}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor (disabled) \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classxmlnode_1_1_c_xml_node}{xmlnode\+::\+C\+Xml\+Node}} $>$ \mbox{\hyperlink{class_c_fish_abfc997d2d755be8f94069c57e75a854b}{Xml\+Save}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classxmlnode_1_1_c_xml_node}{xmlnode\+::\+C\+Xml\+Node}} $>$ \&node)
+\item 
+void \mbox{\hyperlink{class_c_fish_a997f243d89dd8c397597010eec4b611e}{Xml\+Load}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classxmlnode_1_1_c_xml_node}{xmlnode\+::\+C\+Xml\+Node}} $>$ \&node) override
+\item 
+void \mbox{\hyperlink{class_c_fish_ab3d626359c6bcbb020583ddd19032447}{Change\+Speed}} (int SpeedX, int SpeedY)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_fish_a1daf95e31dfa4f045b67ea821b625275}{C\+Fish}} (\mbox{\hyperlink{class_c_aquarium}{C\+Aquarium}} $\ast$aquarium, const std\+::wstring \&filename)
+\item 
+void \mbox{\hyperlink{class_c_fish_a1f32288b28d3c1f186bd51cf8ac71aeb}{Update}} (double elapsed)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for a fish This applies to all of the fish, but not the decor items in the aquarium. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_fish_a1daf95e31dfa4f045b67ea821b625275}\label{class_c_fish_a1daf95e31dfa4f045b67ea821b625275}} 
+\index{C\+Fish@{C\+Fish}!C\+Fish@{C\+Fish}}
+\index{C\+Fish@{C\+Fish}!C\+Fish@{C\+Fish}}
+\subsubsection{\texorpdfstring{C\+Fish()}{CFish()}}
+{\footnotesize\ttfamily C\+Fish\+::\+C\+Fish (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_aquarium}{C\+Aquarium}} $\ast$}]{aquarium,  }\item[{const std\+::wstring \&}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em aquarium} & The aquarium we are in \\
+\hline
+{\em filename} & Filename for the image we use \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_fish_ab3d626359c6bcbb020583ddd19032447}\label{class_c_fish_ab3d626359c6bcbb020583ddd19032447}} 
+\index{C\+Fish@{C\+Fish}!Change\+Speed@{Change\+Speed}}
+\index{Change\+Speed@{Change\+Speed}!C\+Fish@{C\+Fish}}
+\subsubsection{\texorpdfstring{Change\+Speed()}{ChangeSpeed()}}
+{\footnotesize\ttfamily void C\+Fish\+::\+Change\+Speed (\begin{DoxyParamCaption}\item[{int}]{SpeedX,  }\item[{int}]{SpeedY }\end{DoxyParamCaption})}
+
+Changes fish speed based on minimum and maximum speeds set. 
+\begin{DoxyParams}{Parameters}
+{\em SpeedX,SpeedY} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_fish_a1f32288b28d3c1f186bd51cf8ac71aeb}\label{class_c_fish_a1f32288b28d3c1f186bd51cf8ac71aeb}} 
+\index{C\+Fish@{C\+Fish}!Update@{Update}}
+\index{Update@{Update}!C\+Fish@{C\+Fish}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void C\+Fish\+::\+Update (\begin{DoxyParamCaption}\item[{double}]{elapsed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Handle updates in time of our fish
+
+This is called before we draw and allows us to move our fish. We add our speed times the amount of time that has elapsed. 
+\begin{DoxyParams}{Parameters}
+{\em elapsed} & Time elapsed since the class call \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_item_a0e88df0b5e12a93941dcec378797d0fe}{C\+Item}}.
+
+\mbox{\Hypertarget{class_c_fish_a997f243d89dd8c397597010eec4b611e}\label{class_c_fish_a997f243d89dd8c397597010eec4b611e}} 
+\index{C\+Fish@{C\+Fish}!Xml\+Load@{Xml\+Load}}
+\index{Xml\+Load@{Xml\+Load}!C\+Fish@{C\+Fish}}
+\subsubsection{\texorpdfstring{Xml\+Load()}{XmlLoad()}}
+{\footnotesize\ttfamily void C\+Fish\+::\+Xml\+Load (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classxmlnode_1_1_c_xml_node}{xmlnode\+::\+C\+Xml\+Node}} $>$ \&}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Load the attributes for an item node.
+
+This is the base class version that loads the attributes common to all items. Override this to load custom attributes for specific items.
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The Xml node we are loading the item from \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_item_ad0bad7d47a01ff133734b5498f9ca3bb}{C\+Item}}.
+
+\mbox{\Hypertarget{class_c_fish_abfc997d2d755be8f94069c57e75a854b}\label{class_c_fish_abfc997d2d755be8f94069c57e75a854b}} 
+\index{C\+Fish@{C\+Fish}!Xml\+Save@{Xml\+Save}}
+\index{Xml\+Save@{Xml\+Save}!C\+Fish@{C\+Fish}}
+\subsubsection{\texorpdfstring{Xml\+Save()}{XmlSave()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classxmlnode_1_1_c_xml_node}{xmlnode\+::\+C\+Xml\+Node}} $>$ C\+Fish\+::\+Xml\+Save (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classxmlnode_1_1_c_xml_node}{xmlnode\+::\+C\+Xml\+Node}} $>$ \&}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Save this item to an X\+ML node 
+\begin{DoxyParams}{Parameters}
+{\em node} & The node we are going to be a child of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+xmlnode ptr 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_item_a10584fa8e05d3abe125f95f0ceecdedd}{C\+Item}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_c_fish_beta_a0be2886a531ede77bfa5338fec71d71b}{C\+Fish\+Beta}}, \mbox{\hyperlink{class_c_fish_nemo_ae9fd9446cd4852c9d9a78831bec0f32f}{C\+Fish\+Nemo}}, \mbox{\hyperlink{class_c_fish_dory_ac906b7f952cdbc52a72d1e87c9228ad9}{C\+Fish\+Dory}}, and \mbox{\hyperlink{class_c_fish_karp_a182d8cce606be73a981bd140aca64ba8}{C\+Fish\+Karp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Fish.\+h\item 
+\mbox{\hyperlink{_fish_8cpp}{Fish.\+cpp}}\end{DoxyCompactItemize}

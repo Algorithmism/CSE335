@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="ActualMachine.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Machine.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="MachineDlg.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="MachineFactory.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="MachineFactory1.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="MachineLib.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Motor.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Polygon.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Shape.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="WavChannel.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="WAVFileReader.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="WorkingMachine.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="WavPlayer.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="MachineStandin.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="RotationSource.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="RotationSink.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Pulley.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Roller.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Bell.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Cam.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="MachineFactory2.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Component.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ActualMachine.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Machine.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="MachineDlg.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="MachineFactory.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="MachineFactory1.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="MachineLib.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="WorkingMachine.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="WavPlayer.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="WavChannel.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Motor.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="WAVFileReader.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="MachineStandin.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Polygon.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="RotationSource.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="RotationSink.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Roller.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Pulley.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Cam.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="MachineFactory2.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MachineLib.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\machine.bmp" />
+    <Image Include="res\tree100.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\MachineLib.rc2" />
+    <None Include="MachineLib.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{d3c7bd55-aa8e-4f57-a2d8-8e38a48b5960}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{de128202-771d-4ec7-a114-acd53f2164f4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

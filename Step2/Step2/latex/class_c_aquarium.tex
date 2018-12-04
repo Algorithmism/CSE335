@@ -1,0 +1,194 @@
+\hypertarget{class_c_aquarium}{}\section{C\+Aquarium Class Reference}
+\label{class_c_aquarium}\index{C\+Aquarium@{C\+Aquarium}}
+
+
+{\ttfamily \#include $<$Aquarium.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_aquarium_ab6ba8b1abd87437ff66748e82173a5a8}{C\+Aquarium}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_aquarium_ab1baf78dc047af2b8cab8982e1446875}{$\sim$\+C\+Aquarium}} ()
+\item 
+void \mbox{\hyperlink{class_c_aquarium_a20b4899158d1ba4bc41217630d47e180}{On\+Draw}} (Gdiplus\+::\+Graphics $\ast$graphics)
+\item 
+void \mbox{\hyperlink{class_c_aquarium_a85063d05c147cf80f54182016fe12d64}{Add}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_item}{C\+Item}} $>$ item)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_item}{C\+Item}} $>$ \mbox{\hyperlink{class_c_aquarium_a7129486467e76938fbc049723f9187f3}{Hit\+Test}} (int x, int y)
+\item 
+void \mbox{\hyperlink{class_c_aquarium_a2ee2a7d57d9f5d9996f9f9b468c98a2b}{Push\+To\+Front}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_item}{C\+Item}} $>$ item)
+\item 
+bool \mbox{\hyperlink{class_c_aquarium_a111b3c61aa0cd3f8bdda1e2bc6b63ed1}{Killing}} (\mbox{\hyperlink{class_c_item}{C\+Item}} $\ast$item)
+\item 
+void \mbox{\hyperlink{class_c_aquarium_adc9e22446b161ec23acdef368cb8ac2e}{Clear}} ()
+\item 
+void \mbox{\hyperlink{class_c_aquarium_acace2b3a8c1ed29011d83ac8231c66d0}{Save}} (const std\+::wstring \&filename)
+\item 
+void \mbox{\hyperlink{class_c_aquarium_aeffc772356405adc8b79beba77c25d0f}{Update}} (double elapsed)
+\item 
+void \mbox{\hyperlink{class_c_aquarium_a21faac4da17cea923d8f7a5cebe45141}{Load}} (const std\+::wstring \&filename)
+\item 
+int \mbox{\hyperlink{class_c_aquarium_a002b101c76d468db423da85b9eb56210}{Get\+Width}} () const
+\item 
+int \mbox{\hyperlink{class_c_aquarium_a6553dfa3238a4e731dbdbe0ccd6ce956}{Get\+Height}} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents an aquarium 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_aquarium_ab6ba8b1abd87437ff66748e82173a5a8}\label{class_c_aquarium_ab6ba8b1abd87437ff66748e82173a5a8}} 
+\index{C\+Aquarium@{C\+Aquarium}!C\+Aquarium@{C\+Aquarium}}
+\index{C\+Aquarium@{C\+Aquarium}!C\+Aquarium@{C\+Aquarium}}
+\subsubsection{\texorpdfstring{C\+Aquarium()}{CAquarium()}}
+{\footnotesize\ttfamily C\+Aquarium\+::\+C\+Aquarium (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor \mbox{\Hypertarget{class_c_aquarium_ab1baf78dc047af2b8cab8982e1446875}\label{class_c_aquarium_ab1baf78dc047af2b8cab8982e1446875}} 
+\index{C\+Aquarium@{C\+Aquarium}!````~C\+Aquarium@{$\sim$\+C\+Aquarium}}
+\index{````~C\+Aquarium@{$\sim$\+C\+Aquarium}!C\+Aquarium@{C\+Aquarium}}
+\subsubsection{\texorpdfstring{$\sim$\+C\+Aquarium()}{~CAquarium()}}
+{\footnotesize\ttfamily C\+Aquarium\+::$\sim$\+C\+Aquarium (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_aquarium_a85063d05c147cf80f54182016fe12d64}\label{class_c_aquarium_a85063d05c147cf80f54182016fe12d64}} 
+\index{C\+Aquarium@{C\+Aquarium}!Add@{Add}}
+\index{Add@{Add}!C\+Aquarium@{C\+Aquarium}}
+\subsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void C\+Aquarium\+::\+Add (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_item}{C\+Item}} $>$}]{item }\end{DoxyParamCaption})}
+
+Add an item to the aquarium 
+\begin{DoxyParams}{Parameters}
+{\em item} & New item to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_aquarium_adc9e22446b161ec23acdef368cb8ac2e}\label{class_c_aquarium_adc9e22446b161ec23acdef368cb8ac2e}} 
+\index{C\+Aquarium@{C\+Aquarium}!Clear@{Clear}}
+\index{Clear@{Clear}!C\+Aquarium@{C\+Aquarium}}
+\subsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void C\+Aquarium\+::\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clear the aquarium data.
+
+Deletes all known items in the aquarium. \mbox{\Hypertarget{class_c_aquarium_a6553dfa3238a4e731dbdbe0ccd6ce956}\label{class_c_aquarium_a6553dfa3238a4e731dbdbe0ccd6ce956}} 
+\index{C\+Aquarium@{C\+Aquarium}!Get\+Height@{Get\+Height}}
+\index{Get\+Height@{Get\+Height}!C\+Aquarium@{C\+Aquarium}}
+\subsubsection{\texorpdfstring{Get\+Height()}{GetHeight()}}
+{\footnotesize\ttfamily int C\+Aquarium\+::\+Get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the height of the aquarium \begin{DoxyReturn}{Returns}
+Aquarium height 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_aquarium_a002b101c76d468db423da85b9eb56210}\label{class_c_aquarium_a002b101c76d468db423da85b9eb56210}} 
+\index{C\+Aquarium@{C\+Aquarium}!Get\+Width@{Get\+Width}}
+\index{Get\+Width@{Get\+Width}!C\+Aquarium@{C\+Aquarium}}
+\subsubsection{\texorpdfstring{Get\+Width()}{GetWidth()}}
+{\footnotesize\ttfamily int C\+Aquarium\+::\+Get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the width of the aquarium \begin{DoxyReturn}{Returns}
+Aquarium width 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_aquarium_a7129486467e76938fbc049723f9187f3}\label{class_c_aquarium_a7129486467e76938fbc049723f9187f3}} 
+\index{C\+Aquarium@{C\+Aquarium}!Hit\+Test@{Hit\+Test}}
+\index{Hit\+Test@{Hit\+Test}!C\+Aquarium@{C\+Aquarium}}
+\subsubsection{\texorpdfstring{Hit\+Test()}{HitTest()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_item}{C\+Item}} $>$ C\+Aquarium\+::\+Hit\+Test (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Test an x,y click location to see if it clicked on some item in the aquarium. 
+\begin{DoxyParams}{Parameters}
+{\em x} & X location \\
+\hline
+{\em y} & Y location \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to item we clicked on or nullptr if none. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_aquarium_a111b3c61aa0cd3f8bdda1e2bc6b63ed1}\label{class_c_aquarium_a111b3c61aa0cd3f8bdda1e2bc6b63ed1}} 
+\index{C\+Aquarium@{C\+Aquarium}!Killing@{Killing}}
+\index{Killing@{Killing}!C\+Aquarium@{C\+Aquarium}}
+\subsubsection{\texorpdfstring{Killing()}{Killing()}}
+{\footnotesize\ttfamily bool C\+Aquarium\+::\+Killing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_item}{C\+Item}} $\ast$}]{eater }\end{DoxyParamCaption})}
+
+We are passed a pointer to a fish that eats. We check to see if there are any fish it is currently over. If so, eat them! 
+\begin{DoxyParams}{Parameters}
+{\em item} & Item we are testing \\
+\hline
+{\em eater} & is the karp \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if a fish is eaten 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_aquarium_a21faac4da17cea923d8f7a5cebe45141}\label{class_c_aquarium_a21faac4da17cea923d8f7a5cebe45141}} 
+\index{C\+Aquarium@{C\+Aquarium}!Load@{Load}}
+\index{Load@{Load}!C\+Aquarium@{C\+Aquarium}}
+\subsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily void C\+Aquarium\+::\+Load (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{filename }\end{DoxyParamCaption})}
+
+Load the aquarium from a .aqua X\+ML file.
+
+Opens the X\+ML file and reads the nodes, creating items as appropriate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The filename of the file to load the aquarium from. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_aquarium_a20b4899158d1ba4bc41217630d47e180}\label{class_c_aquarium_a20b4899158d1ba4bc41217630d47e180}} 
+\index{C\+Aquarium@{C\+Aquarium}!On\+Draw@{On\+Draw}}
+\index{On\+Draw@{On\+Draw}!C\+Aquarium@{C\+Aquarium}}
+\subsubsection{\texorpdfstring{On\+Draw()}{OnDraw()}}
+{\footnotesize\ttfamily void C\+Aquarium\+::\+On\+Draw (\begin{DoxyParamCaption}\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics }\end{DoxyParamCaption})}
+
+Draw the aquarium 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & The G\+D\+I+ graphics context to draw on \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_aquarium_a2ee2a7d57d9f5d9996f9f9b468c98a2b}\label{class_c_aquarium_a2ee2a7d57d9f5d9996f9f9b468c98a2b}} 
+\index{C\+Aquarium@{C\+Aquarium}!Push\+To\+Front@{Push\+To\+Front}}
+\index{Push\+To\+Front@{Push\+To\+Front}!C\+Aquarium@{C\+Aquarium}}
+\subsubsection{\texorpdfstring{Push\+To\+Front()}{PushToFront()}}
+{\footnotesize\ttfamily void C\+Aquarium\+::\+Push\+To\+Front (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_item}{C\+Item}} $>$}]{item }\end{DoxyParamCaption})}
+
+Function to push to front of list 
+\begin{DoxyParams}{Parameters}
+{\em item} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_aquarium_acace2b3a8c1ed29011d83ac8231c66d0}\label{class_c_aquarium_acace2b3a8c1ed29011d83ac8231c66d0}} 
+\index{C\+Aquarium@{C\+Aquarium}!Save@{Save}}
+\index{Save@{Save}!C\+Aquarium@{C\+Aquarium}}
+\subsubsection{\texorpdfstring{Save()}{Save()}}
+{\footnotesize\ttfamily void C\+Aquarium\+::\+Save (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{filename }\end{DoxyParamCaption})}
+
+Save the aquarium as a .aqua X\+ML file.
+
+Open an X\+ML file and stream the aquarium data to it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The filename of the file to save the aquarium to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_aquarium_aeffc772356405adc8b79beba77c25d0f}\label{class_c_aquarium_aeffc772356405adc8b79beba77c25d0f}} 
+\index{C\+Aquarium@{C\+Aquarium}!Update@{Update}}
+\index{Update@{Update}!C\+Aquarium@{C\+Aquarium}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void C\+Aquarium\+::\+Update (\begin{DoxyParamCaption}\item[{double}]{elapsed }\end{DoxyParamCaption})}
+
+Handle updates for animation 
+\begin{DoxyParams}{Parameters}
+{\em elapsed} & The time since the last update \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_aquarium_8h}{Aquarium.\+h}}\item 
+\mbox{\hyperlink{_aquarium_8cpp}{Aquarium.\+cpp}}\end{DoxyCompactItemize}

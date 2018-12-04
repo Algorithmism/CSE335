@@ -1,0 +1,79 @@
+\hypertarget{class_c_decor_castle}{}\section{C\+Decor\+Castle Class Reference}
+\label{class_c_decor_castle}\index{C\+Decor\+Castle@{C\+Decor\+Castle}}
+
+
+{\ttfamily \#include $<$Decor\+Castle.\+h$>$}
+
+Inheritance diagram for C\+Decor\+Castle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_decor_castle}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_decor_castle_a9c88c926ea898a19ef6b726a722f39af}{C\+Decor\+Castle}} (\mbox{\hyperlink{class_c_aquarium}{C\+Aquarium}} $\ast$aquarium)
+\item 
+\mbox{\Hypertarget{class_c_decor_castle_a5f0d27e7013bc141525986d2bd6cd3f3}\label{class_c_decor_castle_a5f0d27e7013bc141525986d2bd6cd3f3}} 
+\mbox{\hyperlink{class_c_decor_castle_a5f0d27e7013bc141525986d2bd6cd3f3}{C\+Decor\+Castle}} ()=delete
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_decor_castle_a430a8ba95eb526bda2d966a63d11e73c}\label{class_c_decor_castle_a430a8ba95eb526bda2d966a63d11e73c}} 
+\mbox{\hyperlink{class_c_decor_castle_a430a8ba95eb526bda2d966a63d11e73c}{C\+Decor\+Castle}} (const \mbox{\hyperlink{class_c_decor_castle}{C\+Decor\+Castle}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor (disabled) \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classxmlnode_1_1_c_xml_node}{xmlnode\+::\+C\+Xml\+Node}} $>$ \mbox{\hyperlink{class_c_decor_castle_a83ecb7c898679e55dcafbc6492bc38d0}{Xml\+Save}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classxmlnode_1_1_c_xml_node}{xmlnode\+::\+C\+Xml\+Node}} $>$ \&node) override
+\item 
+virtual \mbox{\hyperlink{class_c_decor_castle_a520ef2928c6d8a115200d64060b93c6f}{$\sim$\+C\+Decor\+Castle}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Implements a Decor Castle. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_decor_castle_a9c88c926ea898a19ef6b726a722f39af}\label{class_c_decor_castle_a9c88c926ea898a19ef6b726a722f39af}} 
+\index{C\+Decor\+Castle@{C\+Decor\+Castle}!C\+Decor\+Castle@{C\+Decor\+Castle}}
+\index{C\+Decor\+Castle@{C\+Decor\+Castle}!C\+Decor\+Castle@{C\+Decor\+Castle}}
+\subsubsection{\texorpdfstring{C\+Decor\+Castle()}{CDecorCastle()}}
+{\footnotesize\ttfamily C\+Decor\+Castle\+::\+C\+Decor\+Castle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_aquarium}{C\+Aquarium}} $\ast$}]{aquarium }\end{DoxyParamCaption})}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em aquarium} & The aquarium this is a member of \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_decor_castle_a520ef2928c6d8a115200d64060b93c6f}\label{class_c_decor_castle_a520ef2928c6d8a115200d64060b93c6f}} 
+\index{C\+Decor\+Castle@{C\+Decor\+Castle}!````~C\+Decor\+Castle@{$\sim$\+C\+Decor\+Castle}}
+\index{````~C\+Decor\+Castle@{$\sim$\+C\+Decor\+Castle}!C\+Decor\+Castle@{C\+Decor\+Castle}}
+\subsubsection{\texorpdfstring{$\sim$\+C\+Decor\+Castle()}{~CDecorCastle()}}
+{\footnotesize\ttfamily C\+Decor\+Castle\+::$\sim$\+C\+Decor\+Castle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+Destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_decor_castle_a83ecb7c898679e55dcafbc6492bc38d0}\label{class_c_decor_castle_a83ecb7c898679e55dcafbc6492bc38d0}} 
+\index{C\+Decor\+Castle@{C\+Decor\+Castle}!Xml\+Save@{Xml\+Save}}
+\index{Xml\+Save@{Xml\+Save}!C\+Decor\+Castle@{C\+Decor\+Castle}}
+\subsubsection{\texorpdfstring{Xml\+Save()}{XmlSave()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classxmlnode_1_1_c_xml_node}{xmlnode\+::\+C\+Xml\+Node}} $>$ C\+Decor\+Castle\+::\+Xml\+Save (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classxmlnode_1_1_c_xml_node}{xmlnode\+::\+C\+Xml\+Node}} $>$ \&}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Save this item to an X\+ML node 
+\begin{DoxyParams}{Parameters}
+{\em node} & The node we are going to be a child of \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_item_a10584fa8e05d3abe125f95f0ceecdedd}{C\+Item}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_decor_castle_8h}{Decor\+Castle.\+h}}\item 
+Decor\+Castle.\+cpp\end{DoxyCompactItemize}

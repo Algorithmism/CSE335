@@ -1,0 +1,12 @@
+﻿  stdafx.cpp
+  CAquariumTest.cpp
+  CFishBetaTest.cpp
+  CFishDoryTest.cpp
+  CFishKarpTest.cpp
+  CFishNemoTest.cpp
+  CItemTest.cpp
+  EmptyTest.cpp
+  initialize.cpp
+  Generating Code...
+     Creating library C:\Users\markm\source\repos\Copies\Step2\Debug\Testing.lib and object C:\Users\markm\source\repos\Copies\Step2\Debug\Testing.exp
+  Testing.vcxproj -> C:\Users\markm\source\repos\Copies\Step2\Debug\Testing.dll

@@ -1,0 +1,6 @@
+This directory is for the copying of projects to save the data. If you'd like to run the files, please place them back in the parent directory 'repos':
+
+Do NOT delete or overwrite the folder called Step2. Instead, rename the Step2 folder in repos directory to 'Step2Copy'. Place 'Step2Copy' into the Copies directory.
+Same with all other projects.
+
+ONLY THEN shall you place projects back into the repos directory.
